@@ -19,36 +19,95 @@
     </link>
 </head>
 <body>
+
+    <style>
+        body {
+            background-image: url(./assets/lucas-carl-PQfuavIwNGM-unsplash.jpg);
+        }
+    </style>
+
     <nav class="navbar">
         <div class="container-fluid">
 
-          
-            <div class="p-3 mb-2 bg-light text-dark">
-                <form class="d-flex" role="search">
-                    <div class="search-container">
-                        <input id="searchInput" type="text" class="search-input" placeholder="Search...">
-                        
-                    </div>
-                </form>
-                <button  id="searchBtn"class=" search-icon">&#128269;</button> 
-            </div>
 
+            <div class="p-2 mb-5 navBg text-white ">
+                <div>
+
+                    <img class="navImg" src="./assets/Rain.png" alt=" a logo ">
+
+                </div>
+
+                <div class="favoritesBtn">
+
+                    <button class=" btn text-decoration-underline text-white" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Favorites</button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p>Try scrolling the rest of the page to see this option in action.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="d-flex" role="search">
+
+                    <!-- <div class="search-container"> -->
+                    <button id="searchBtn" class=" search-icon">&#128269;</button>
+
+                    <input id="searchInput" type="text" class="search-input" placeholder="Enter City, State">
+                    <!-- </div> -->
+                    </form>
+
+                </div>
+            </div>
             <div>
+
+
+
+
+    </nav>
+
+
+    <div class="container locationBg">
+        <div class="row">
+            <div class="col tempNum ">
+                <h2 id="tempOutPut">
+                    40
+                </h2>
+            </div>
+            <div class="col cityLove">
                 <h1 id="cityOutPut">
                     stockton
                 </h1>
             </div>
+            <div class="col">
+                <img src="./assets/sun (1).png" alt="sun image " >
+            </div>
+            <div class="col">
 
-               
-
+            </div>
         </div>
+        <p class="tempDes"> Clear Sky</p>
+        <div class="row">
+            <div class="col lowTemp">
+                <p>Low: 48°</p>
+            </div>
+            <div class="col highTemp">
+                <p>High: 62°</p>
+            </div>
+        </div>
+    </div>
 
-    </nav>
 
-    <h2 id="tempOutPut">
-        40
-    </h2>
-    
+
+
 
 
 
